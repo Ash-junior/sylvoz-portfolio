@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Sylvoz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+</head>
+<body>
+    <canvas id="bg-particles"></canvas>
+    <header class="fade-in">
+        <div class="container">
+            <h1>Sylvoz ONDJIANI</h1>
+            <p class="description">Étudiant en 5ème année de cycle ingénieur généraliste à l'ECAM Louis De Broglie.</p>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#a-propos" class="nav-btn">À propos</a></li>
+                    <li><a href="#projets" class="nav-btn">Projets</a></li>
+                    <li><a href="#parcours" class="nav-btn">Parcours</a></li>
+                    <li><a href="#competences" class="nav-btn">Compétences</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Section À propos -->
+    <section id="a-propos" class="about-section fade-in">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <p class="about-desc">
+                🎓 Ingénieur en devenir | 💻 Codeur passionné | 🎮 Créateur sous Unreal Engine.
+                En 5ᵉ année à l’ECAM Louis De Broglie, je combine tech, créativité et ambition. Prêt à aller plus loin ! 🚀
+            </p>
+            <ul class="about-infos">
+                <li><strong>Statut professionnel :</strong> Développeur indépendant / Etudiant</li>
+                <li><strong>Hobbies :</strong> Musique, jeux vidéo, football et dev bien sûr</li>
+            </ul>
+            <a href="assets/Sylvoz ONDJIANI - CV Stage Ingé Développeur.pdf" class="cv-btn" download>Télécharger mon CV</a>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="projects-section fade-in">
+        <div class="container">
+            <h2>Mes Projets</h2>
+            <div class="project-tags">
+                <button class="tag-btn active" data-tag="all">Tous</button>
+                <button class="tag-btn" data-tag="web">Web</button>
+                <button class="tag-btn" data-tag="jeux">Jeux</button>
+                <button class="tag-btn" data-tag="robotique">Robotique et embarqué</button>
+                <!-- <button class="tag-btn" data-tag="amc">Amélioration continue </button> -->
+            </div>
+
+            <div class="projects-grid">
+                <!-- Exemple de carte projet -->
+                <div class="project-card" data-tags="web">
+                    <img src="images/portfolio.png" alt="Projet 1" class="project-img">
+                    <h3 class="project-title">Portfolio Personnel</h3>
+                    <div class="project-hover">
+                        <p>Un site web simple et moderne pour présenter mon parcours et mes réalisations.</p>
+                        <button class="see-more-btn" data-project="1">Voir plus</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tags="jeux">
+                    <img src="images/insaneparkour_logo.jpg" alt="Projet 2" class="project-img">
+                    <h3 class="project-title">Insane Parkour - Jeu de plateforme multijoueur</h3>
+                    <div class="project-hover">
+                        <p>Un jeu interactif multijoueur de 4 à 6 joueurs.</p>
+                        <button class="see-more-btn" data-project="2">Voir plus</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tags="robotique">
+                    <img src="images/project_perseus_logo.webp" alt="Projet 3" class="project-img">
+                    <h3 class="project-title">Reconnaissance faciale avec Python</h3>
+                    <div class="project-hover">
+                        <p>Une caméra ESP32 et un programme python pour reconnaître les visages.</p>
+                        <button class="see-more-btn" data-project="3">Voir plus</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tags="robotique">
+                    <img src="images/Ecambot_logo.png" alt="Projet 4" class="project-img">
+                    <h3 class="project-title">ECAMBOT 2025</h3>
+                    <div class="project-hover">
+                        <p>Un robot construit de zéro et piloté par des gestes avec openCV et du machine learning.</p>
+                        <button class="see-more-btn" data-project="4">Voir plus</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tags="jeux">
+                    <img src="images/project_SixH_logo.png" alt="Projet 5" class="project-img">
+                    <h3 class="project-title">6 Hours - Jeu action - aventure solo</h3>
+                    <div class="project-hover">
+                        <p>Un jeu combinant action, infiltration et contre-la-montre.</p>
+                        <button class="see-more-btn" data-project="5">Voir plus</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tags="jeux">
+                    <img src="images/around_logo.png" alt="Projet 6" class="project-img">
+                    <h3 class="project-title">Around - Connect The world</h3>
+                    <div class="project-hover">
+                        <p>Un jeu où l'on controle des boules en jouant avec la physique.</p>
+                        <button class="see-more-btn" data-project="6">Voir plus</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tags="robotique">
+                    <img src="images/project_hermes_logo.webp" alt="Projet 7" class="project-img">
+                    <h3 class="project-title">Clavier virtuel utilisé avec le visage</h3>
+                    <div class="project-hover">
+                        <p>Une caméra qui enregistre le visage de l'utilisateur et interprète ses mouvements pour utiliser un clavier virtuel sous windows.</p>
+                        <button class="see-more-btn" data-project="7">Voir plus</button>
+                    </div>
+                </div>
+
+                <!-- Ajouter d'autres projets ici -->
+            
+            </div>
+        </div>
+        <!-- Modale projet -->
+        <div class="project-modal" id="project-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-body">
+                    <!-- Contenu dynamique du projet -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Parcours -->
+    <section id="parcours" class="timeline-section fade-in">
+        <div class="container">
+            <h2>Mon Parcours</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Développeur généraliste indépendant</h3>
+                        <p>Début d’une activité indépendante, me permettant d’explorer divers projets et d’appliquer mes compétences en développement web et logiciel.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3>Entrée à l'ECAM Rennes en formation ingénieur généraliste</h3>
+                        <p>Une formation complète permettant d’explorer différents domaines de l’ingénierie, notamment la mécanique, la science des matériaux, la robotique et les télécommunications.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - 2023</div>
+                    <div class="timeline-content">
+                        <h3>DUT Electricité et informatique Industrielle</h3>
+                        <p>Deux années d’études enrichissantes combinant théorie et projets pratiques, menant à l’obtention d'un diplôme de niveau Bac+2. Apprentissage des bases de l'informatique, algorithmique, programmation, réseaux et bases de données.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-content">
+                        <h3>Baccalauréat Scientifique</h3>
+                        <p>Spécialité Mathématiques et Sciences-Physiques, mention Assez-Bien.</p>
+                    </div>
+                </div>
+                <!-- Ajouter d'autres étapes ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="skills-section fade-in">
+        <div class="container">
+            <h2>Compétences</h2>
+            <div class="skills-tree">
+                <div class="skill-node">
+                    <div class="skill-header">
+                        <span class="skill-name">UE5</span>
+                        <span class="skill-level">Niveau : Intermédiaire +</span>
+                    </div>
+                    <ul class="skill-points">
+                        <li>Gestion du multijoueur</li>
+                        <li>C++</li>
+                        <li>Behavior tree et state tree avancés</li>
+                        <li>Blueprint avancé</li>
+                        <li>Gameplay programming</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-branch"></div>
+
+                <div class="skill-node">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML/CSS</span>
+                        <span class="skill-level">Niveau : Intermédiaire</span>
+                    </div>
+                    <ul class="skill-points">
+                        <li>Création de sites responsives</li>
+                        <li>Animations CSS avancées</li>
+                        <li>Accessibilité web</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-branch"></div>
+                
+                <div class="skill-node">
+                    <div class="skill-header">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-level">Niveau : Intermédiaire</span>
+                    </div>
+                    <ul class="skill-points">
+                        <li>Applications interactives</li>
+                        <li>Manipulation DOM</li>
+                        <li>APIs REST</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-branch"></div>
+                
+                <div class="skill-node">
+                    <div class="skill-header">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-level">Niveau : Intermédiaire</span>
+                    </div>
+                    <ul class="skill-points">
+                        <li>Automatisation de scripts</li>
+                        <li>Traitement d'images et IA</li>
+                        <li>Développement web (Flask, Django)</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-branch"></div>
+                
+                <div class="skill-node">
+                    <div class="skill-header">
+                        <span class="skill-name">Robotique/IoT</span>
+                        <span class="skill-level">Niveau : Intermédiaire</span>
+                    </div>
+                    <ul class="skill-points">
+                        <li>Arduino, ESP32</li>
+                        <li>Capteurs et actionneurs</li>
+                        <li>Projets connectés</li>
+                    </ul>
+                </div>
+                <!-- Ajouter d'autres compétences ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenu principal du portfolio -->
+    <footer class="site-footer slide-in">
+        <div class="container">
+            <div class="footer-contacts">
+                <span>Email : <a href="mailto:juniorsylvoz@gmail.com">sylvoz.ondjiani@gmail.com</a></span>
+                <span>GitHub : <a href="https://github.com/Ash-junior" target="_blank">Sylvoz Ash GitHub</a></span>
+                <span>LinkedIn : <a href="https://www.linkedin.com/in/sylvoz-ondjiani" target="_blank">sylvoz-ondjiani</a></span>
+            </div>
+            <div class="footer-copy">
+                &copy; 2024 Sylvoz ONDJIANI. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+    <script src="js/projects.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html> 
